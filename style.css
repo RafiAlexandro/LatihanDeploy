@@ -1,0 +1,261 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.landing-page {
+    background-attachment: fixed;
+    position: relative;
+    background-image: url('./assets/background.jpg');
+    background-size: cover;
+    height: 100vh;
+    display: block;
+}
+
+.welcome-text {
+    position: absolute;
+    display: block;
+    width: 100%;
+    top: 45%;
+    font-size: 1.8em;
+    margin: 0;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+}
+
+.wrapper {
+    margin: 0 2em;
+}
+
+ul.nav {
+    position: sticky;
+    top: 0;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+    list-style: none;
+}
+
+li.nav-icon {
+    float: left;
+}
+
+.nav-icon {
+    padding: 0.3em 0;
+}
+
+.nav-icon img {
+    height: 2.4em;
+    border-radius: 100%
+}
+
+.nav li {
+    margin: auto;
+    font-family: 'Oswald', sans-serif;
+    display: inline-block;
+    font-size: 1.2em;
+    font-weight: 300;
+}
+
+.nav li a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    padding: 1em 1.5em;
+}
+
+.about-me {
+    padding: 2em 0;
+}
+
+.introduction {
+    text-align: center;
+}
+
+.img-icon {
+    height: 12em;
+}
+
+.content-perkenalan {
+    font-size: 1.2em;
+    width: 80%;
+    max-width: 26em;
+    margin: 1em auto;
+    text-align: justify;
+    line-height: 1.6em;
+}
+
+.education {
+    display: inline-block;
+    width: 49.5%;
+    vertical-align: top;
+    margin-top: 2em;
+    text-align: center;
+}
+
+.working {
+    display: inline-block;
+    width: 49.5%;
+    vertical-align: top;
+    margin-top: 2em;
+    text-align: center;
+}
+
+.portfolio {
+    width: 100%;
+    padding: 0 0 2em 0;
+}
+
+.title-portfolio {
+    text-decoration: underline;
+    text-align: center;
+}
+
+.container {
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+}
+
+.img-portfolio {
+    max-width: 19em;
+    display: inline-block;
+    width: 90%;
+    vertical-align: middle;
+    margin: 0 auto;
+    margin-bottom: 2em;
+    max-height: 12em;
+    background-size: cover;
+}
+
+hr {
+    max-width: 28em;
+    margin: 0 auto;
+}
+
+.contact {
+    width: 100%;
+    padding: 2em 0;
+}
+
+.title-contact {
+    text-decoration: underline;
+    text-align: center;
+}
+
+.form-contact-us {
+    width: 49.5%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.inputan {
+    width: 85%;
+    text-align: left;
+    display: block;
+    margin: 0 auto;
+}
+
+.inputan input {
+    width: 100%;
+    margin: 0.5em 0;
+    font-size: 1em;
+}
+
+.inputan textarea {
+    width: 100%;
+    margin: 0.5em 0;
+    font-size: 1em;
+}
+
+.btn-kirim {
+    width: 87%;
+    margin: 1em 2em;
+    border: none;
+    background-color: teal;
+    color: white;
+    font-size: 1em;
+    padding: 0.5em 0;
+}
+
+.non-desktop {
+    display: none;
+}
+
+.contact-info {
+    width: 49.5%;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+}
+
+.contact-icon-bundler {
+    display: inline-block;
+    max-width: 300px;
+    text-decoration: none;
+    color: black;
+}
+
+.contact-icon {
+    width: 3.5em;
+    margin: 1em 2em;
+    vertical-align: middle;
+}
+
+footer {
+    text-align: center;
+    margin-top: 2em;
+    padding: 1.5em 0;
+    color: white;
+    background-color: black;
+}
+
+@media only screen and (max-width: 700px) {
+    .nav-icon.desktop {
+        display: none;
+    }
+
+    ul.nav {
+        text-align: center;
+    }
+
+    .education {
+        display: block;
+        width: 100%;
+    }
+
+    .working {
+        display: block;
+        width: 100%;
+    }
+
+    .form-contact-us {
+        width: 100%;
+        display: block;
+    }
+
+    .contact-info {
+        width: 100%;
+        display: block;
+    }
+
+    .contact-info div {
+        display: inline;
+    }
+
+    .non-desktop {
+        display: block;
+    }
+
+    .contact-icon-bundler {
+        display: inline-block;
+        height: 5em;
+    }
+
+    .contact-desktop {
+        display: none;
+    }
+}
